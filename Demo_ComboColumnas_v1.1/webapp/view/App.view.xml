@@ -1,0 +1,81 @@
+<mvc:View 
+	controllerName="Demo_ComboColumnas.controller.App" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:control="Demo_ComboColumnas.control">
+	<App>
+		<pages>
+			<Page id="mainPage" title="{i18n>title}">
+				<content>
+					<html:style>
+						.sinPadding {
+							padding-left: 0px;
+						}
+					</html:style>
+					
+					
+				<Input id="inputExpenses" placeholder="Enter Company Code ..." showValueHelp="true" valueHelpRequest="onDeploy" liveChange="onFind" width="50%" />
+					
+<!--					<Input id="iMasterSearchInput" type="Text"  
+					  placeholder="Search Portfolios, Programs, Projects" showSuggestion="true"  >  
+					  <suggestionColumns>  
+						<Column hAlign="Begin" popinDisplay="Inline" demandPopin="true">  
+							<Label text="Project" />  
+						</Column>  
+						<Column hAlign="Center" popinDisplay="Inline" demandPopin="true" minScreenWidth="Tablet">  
+							<Label text="Project Description" />  
+						</Column>  
+						<Column hAlign="Center" popinDisplay="Inline" demandPopin="false" minScreenWidth="Tablet">  
+							<Label text="Portfolio" />  
+						</Column>  
+						<Column hAlign="End" popinDisplay="Inline" demandPopin="true">  
+							<Label text="Program" />  
+						</Column>  
+					  </suggestionColumns>  
+					  <suggestionRows>  
+						  <ColumnListItem>  
+						  <cells>  
+							  <VBox>
+							  	<items>
+							  		<Label text="jjj 1" />  
+							  		<Label text="jjj 2" />  
+							  		<Label text="jjj 3" />  
+							  		<Label text="jjj 4" />  
+							  	</items>
+							  </VBox>
+							  <Label text="Label 2" />  
+							  <Label text="Label 3" />  
+							  <Label text="Label 4" />  
+						  </cells>  
+						  </ColumnListItem>  
+					  </suggestionRows>  
+					  </Input>  -->
+					
+					<!--
+				<control:ComboColumns >
+					<l:grid>
+						<l:Grid
+							defaultSpan="XL3 L3 M6 S12"
+							defaultIndent="XL0 L0 M0 S0">
+							<content>
+								<Button text="Boton 1" />
+								<Button text="Boton 2" />
+								<Button text="Boton 3" />
+								<Button text="Boton 4" />
+								<Button text="Boton 5" />
+								<Button text="Boton 6" />
+							</content>
+						</l:Grid>
+					</l:grid>
+				</control:ComboColumns>
+				-->
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

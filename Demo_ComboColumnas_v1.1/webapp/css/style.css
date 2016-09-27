@@ -1,0 +1,937 @@
+/*--------------- FORMAT ------------------*/
+
+.sapUiBody {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: SourceSansPro-Semibold, Arial, Helvetica;
+    font-size: 1rem;
+    outline: 0;
+}
+
+.textAlignCenter{
+	text-align:center;
+}
+
+.textAlignLeft{
+	text-align:left;
+}
+
+.displayRight{
+	display: flex;
+	align-items: center;
+    justify-content: flex-end;
+}
+
+
+.margin20{
+	margin: 0 20px;
+	margin-right:60px;
+}
+
+.marginTop60{
+	padding-top: 60px;
+}
+
+.paddingTop60{
+	padding-top: 60px;
+}
+
+
+.borderRightGreen{
+	border-right: solid 0.5px #bfcc4e;
+}
+
+.borderRightWhite{
+	border-right: solid 1.5px #ffffff;
+}
+
+.borderLeftGrey{
+	border-left: 1.5px solid #C8C8C8 !important;
+}
+
+.arrowDown{
+	margin: 18px 20px 0 0;
+}
+
+.paddingTableGrey{
+	padding-left: 33px;
+	padding-right: 56px;
+}
+
+.paddingTableBlue{
+	padding-right: 37px;
+}
+
+.marginToptableCardview{
+	margin-top:-13px;
+}
+
+/*____________________END FORMAT__________________________*/
+
+
+/*---------------------BACKGROUND-----------------------*/
+
+.backgroundSpace1 {
+  opacity: 0.85;
+  background-color: #dee2e7;
+  padding: 0 1.5rem;
+}
+
+.backgroundSpace1.sapUiRespGrid.sapUiRespGridHSpace1.sapUiRespGridVSpace1 {
+    padding-bottom: 42px;
+    padding-right: 43px;
+    padding-left: 25px;
+    padding-top: 26px;
+}
+
+.backgroundSpace1Breadcrumbs.backgroundSpace1.sapUiRespGrid.sapUiRespGridHSpace1.sapUiRespGridVSpace1 {
+    padding-bottom: 42px;
+    padding-right: 43px;
+    padding-left: 25px;
+    padding-top: 0px;
+}
+
+
+
+
+.backgroundSpace2{
+	background-color: #EBECF0 ; /*Gris clarito*/
+	padding-top:48px;
+	margin-left: -49px;
+}
+
+.background2Right{
+	width: 100%;
+	background-color: #EBECF0 ; /*Gris clarito*/
+	padding-top:48px;
+
+}
+
+
+.backgroundSpace3{
+	background-color: rgb(243,244,246) ; /*Blanco*/
+}
+
+/*.backgroundSpace3.sapUiRespGrid.sapUiRespGridHSpace1.sapUiRespGridMedia-Std-LargeDesktop.sapUiRespGridVSpace1{
+	padding-right:52px;
+}*/
+
+
+.sapUiGlobalBackgroundImage {
+    background-color:white;
+    margin: 0 auto;
+}
+
+.sapUiRespGrid.sapUiRespGridHSpace1 {
+    padding: 0 1.5rem;
+}
+
+.sapUiRespGrid.sapUiRespGridHSpace2 {
+    padding: 0 1.5rem;
+}
+
+/*_______________________END BACKGROUND__________________________*/
+
+/*---------------GENERAL TEXT----------------------------*/
+
+@font-face {
+  font-family: "SourceSansPro-Semibold";
+  src: url("./SourceSansPro-Semibold.ttf"); 
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("./SourceSansPro-Black.ttf"); 
+}
+
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("./SourceSansPro-Bold.ttf"); 
+}
+
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("./SourceSansPro-Bold.ttf"); 
+}
+
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("./SourceSansPro-Regular.ttf"); 
+}
+
+
+.bigTitle{
+	font-size: 34px;
+	font-weight: 300;
+	padding-left: 0;
+}
+
+
+.mediumTitle{
+	font-size: 28px;
+	font-weight: 600;
+	padding-left: 0;
+}
+
+.backgroundSpace1 .mediumTitle{
+	margin-top: 7px;
+	padding-left: 0;
+}
+
+
+.numberTitle{
+	font-size: 34px;
+	font-weight: 300;
+	color: #2a5095;
+	padding-left: 0;
+}
+
+
+.numberBold{
+	font-weight:bold;
+}
+
+.sapMTitle{
+  font-family: SourceSansPro-Semibold, Arial, Helvetica;
+  color: #2a5095;
+  padding-left: 0;
+}
+
+.sapMLabel{
+	font-weight: 600;
+	color: #4485c9;
+    font-family: SourceSansPro-Semibold, Arial, Helvetica;
+}
+
+.sapMText{
+  font-family: SourceSansPro-Semibold, Arial, Helvetica;
+  font-weight: normal;
+  color: #515151;
+  font-size:16px;
+}
+
+
+.sapMBreadcrumbs {
+    margin-top: 20px;
+    padding: 0;
+    color: #2a5095;
+}
+/*______________END GENERAL TEXT ___________________________*/
+
+/*---------------BUTTONS------------------------*/
+
+
+.sapMBtnInner  {
+	 font-family: SourceSansPro-Semibold, Arial, Helvetica;
+}
+
+
+.btnGreen .sapMBtnInner  {
+	color: white ;
+	border-color: #7E8E07;
+	background: #7E8E07 ;
+	/*padding: 0px 38px !important;*/
+	text-shadow: none !important;
+	 -webkit-box-shadow: 5px 7px 3px 1px rgba(179,179,179,0.63);
+    -webkit-box-shadow-gradient: 5px 7px 3px 1px rgba(179,179,179,0.63);
+	-moz-box-shadow: 5px 7px 3px 1px rgba(179,179,179,0.63);
+	 box-shadow: 3px 4px 4px 1px rgba(171, 171, 171, 0.54);
+}
+
+.btnGreen.sapMBtn.sapMBtnBase.sapMBtnDisabled .sapMBtnDefault.sapMBtnInner.sapMBtnText{
+	color: white ;
+	border-color: #999999  ;
+	background: #999999  ;
+}
+
+.btnBorderBlue .sapMBtnInner  {
+	color:#4C72B0;
+	border: 2px solid rgb(93,136,191); /*Azul medio*/
+	border-color: #4C72B0;
+	background: #ffffff;
+	text-shadow: none;
+	-webkit-box-shadow: 5px 7px 3px 1px rgba(179,179,179,0.63);
+    -webkit-box-shadow-gradient: 5px 7px 3px 1px rgba(179,179,179,0.63);
+	-moz-box-shadow: 5px 7px 3px 1px rgba(179,179,179,0.63);
+	 box-shadow: 3px 4px 4px 1px rgba(171, 171, 171, 0.54);
+}
+
+.btnChangeState .sapMBtnInner  {
+	color: white;
+	border-color: #7E8E07 ;
+	background: #7E8E07;
+	text-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.btnChangeState.sapMBtn.sapMBtnBase.sapMBtnDisabled .sapMBtnDefault.sapMBtnInner.sapMBtnText{
+	color: white ;
+	border-color: #999999  ;
+	background: #999999  ;
+}
+
+.btnNext .sapMBtnInner  {
+	border-color:transparent;
+	box-shadow: none;
+	color: #4C72B0;
+	font-weight:bold;
+	background-color:transparent;
+	border-left-color: #d8d7d7 ;
+	font-size:0.8rem;
+}
+
+.btnNext .sapMBtnIconFirst .sapUiIcon:before{
+	color:#4C72B0; /*Azul oscuro*/
+}
+.btnNext .sapMBtnCustomIcon.sapMBtnIcon:before.sapMBtnIconLeft.sapUiIcon.sapUiIconMirrorInRTL {
+	color:#4C72B0; /*Azul oscuro*/
+}
+
+.btnNext .sapUiIcon:before {
+	color:#4C72B0; /*Azul oscuro*/
+}
+
+.sapMBtnBack .sapUiIcon:before {
+	color:#4C72B0; /*Azul oscuro*/
+}
+
+
+
+.sapMBtn {
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    border: none;
+    outilne:0;
+    background-color: transparent; 
+}
+
+.sapMBtnBase{
+	background:transparent;
+	position: relative;
+	outline:0;
+	vertical-align: top;
+}
+
+.sapMBtnInner {
+    text-align: center;
+    vertical-align:center;
+    position: relative;
+    background: transparent;
+    border-radius: 0.25rem;
+    border:none;
+    outline:0;
+}
+
+/*____________________END BUTTONS________________________*/
+
+/*----------------- ELEMENT CARDVIEW ---------------*/
+.cardView{
+    height: auto;
+    border-bottom: 2px solid #a0ae2c;
+	border-radius: 2px;
+	background-color: #ffffff;
+	box-shadow: 0 1.5px 4px 0 rgba(153, 153, 153, 0.74);
+	
+}
+
+.centerCardView{
+    border-bottom: 2px solid #a0ae2c;
+	border-radius: 2px;
+	background-color: #ffffff;
+	box-shadow: 0 1.5px 4px 0 rgba(153, 153, 153, 0.74);
+	margin-top: 10px;
+	text-align:center;
+    overflow: visible;
+}
+
+
+.backgroundSpace1 .centerCardView.sapUiRespGridMedia-Std-Phone, .backgroundSpace1 .centerCardView.sapUiRespGridMedia-Std-Tablet {
+	height: auto;
+}
+
+.backgroundSpace1 .centerCardView.sapUiRespGridMedia-Std-Desktop, .backgroundSpace1 .centerCardView.sapUiRespGridMedia-Std-LargeDesktop {
+	height: 100px;
+}
+
+
+.centerCardView .sapUiRespGridSpanL4.sapUiRespGridSpanM4.sapUiRespGridSpanS12.sapUiRespGridSpanXL4{
+	margin: 26px 0;
+}
+
+ div[class*="sapUiRespGrid"]>div[class*="sapUiRespGridSpan"] {
+    float: left;
+    overflow: visible;
+ }
+
+
+.centerCardView .sapMLabel{
+	text-align:center;
+	font-size: 26px;
+	font-weight: 600;
+	color: #4485c9;
+    font-family: SourceSansPro-Semibold, Arial, Helvetica;
+}
+
+.centerCardView .sapMText{
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  color: #515151;
+}
+
+/*__________________ END ELEMENT CARDVIEW ________________________*/
+
+/*----------------- ELEMENT USER CARDVIEW ---------------*/	
+.userCardView{
+    border-bottom: 2px solid #a0ae2c;
+	border-radius: 2px;
+	background-color: #ffffff;
+	box-shadow: 0 1.5px 4px 0 rgba(153, 153, 153, 0.74);
+}
+
+.backgroundSpace1 .userCardView{
+	height: 101px;
+	justify-content: flex-start;
+    padding: 0.93rem;
+    margin-top: 10px;
+}
+
+
+
+
+.userCardView .sapMLabel{
+	text-align:center;
+	font-size: 18px;;
+	font-weight: 600;
+	color: #4485c9;
+    font-family: SourceSansPro-Semibold, Arial, Helvetica;
+    text-align:start;
+}
+
+.userCardView .sapMText{
+	font-family: SourceSansPro-Semibold, Arial, Helvetica;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  color: #515151;
+  text-align:start;
+}
+
+.userCardView .sapUiIcon:before {
+	 color: #515151;
+	 text-align:center;
+}
+
+.userCardView .sapMFlexBox .sapUiIcon{
+	text-align:center;
+	margin: 18px 0 0 8px;
+}
+
+.userCardView .sapMFlexBox .sapUiIcon.arrowDown{
+	text-align:center;
+	margin: 30px 0 0 28px;
+}
+
+
+/*__________________ END ELEMENT USER CARDVIEW ________________________*/
+
+
+
+/*------------USER BAR--------------------------------*/
+
+
+.sapUiUfdShellHeader{
+	background-color: #ffffff;
+}
+
+
+/*_______________END USER BAR____________________________*/
+
+
+/*--------- GENERAL TABLE / BOX -------------------------*/
+
+
+.sapMTB {
+    height: 36px;
+    background: transparent;
+	border-bottom: none;
+}
+
+.sapMListTblCell {
+    padding: 0 2px; 
+    vertical-align: middle;
+    height: 50px;
+    font-size: 0.875rem;
+}
+
+	/*---------ELEMENT TABLEGREY --------*/
+	.tableGrey{
+		background: transparent ;
+	    /*border-bottom: 1px solid #DBDFE5 ;*/
+		font-size: 16px;
+		font-weight: normal;
+		color: #515151;
+		outline: 0;
+	}
+	
+	.tableGrey .sapMIBar.sapMListHdrTBar.sapMTB.sapMTB-Transparent-CTX.sapMTBInactive.sapMTBNewFlex{
+		height:60px;
+		/*background: white;*/
+	}
+	
+	.tableGrey .sapMTB-Transparent-CTX>.sapMTitleTB.sapMTitleStyleAuto {
+    	font-size: 28px;
+	}
+
+	.tableGrey .btnGreen .sapMBtnInner{
+		border-radius: 4px;
+		background-color: #808d11;
+		color: white ;
+		font-size: 24px;
+		font-weight: 600;
+		text-shadow: none;
+		/*padding: 0px 38px ;*/
+		width:296px;
+		 -webkit-box-shadow: 5px 7px 3px 1px rgba(179,179,179,0.63);
+	    -webkit-box-shadow-gradient: 5px 7px 3px 1px rgba(179,179,179,0.63);
+		-moz-box-shadow: 5px 7px 3px 1px rgba(179,179,179,0.63);
+		 box-shadow: 3px 4px 4px 1px rgba(171, 171, 171, 0.54);
+		 height: 43px;
+		 top:0px;
+	}
+	
+	.tableGrey .btnGreen:active .sapMBtnInner{
+		 background-color: #bfcc4e;
+	}
+	
+	
+	.tableGrey .sapMTB-Transparent-CTX.sapMTB {
+     padding-left: 0;
+	}
+	
+	.tableGrey .sapMIBar .sapMBarChild:first-child {
+	    margin-left: 0;
+	}
+	
+	.tableGrey .sapMIBar .sapMBarChild {
+	     margin-left: 0;
+	}
+	
+	
+	.tableGrey.backgroundSpace2.sapMList.sapMListBGTranslucent.sapMListTblCnt{
+		background-color: #EBECF0 ; /*Gris clarito*/
+	}
+
+	
+	.tableGrey>table{
+		box-shadow: 3px 4px 4px 1px rgba(171, 171, 171, 0.54);
+		margin-top: 7px;
+	}
+
+	.tableGrey .sapMListTbl th {
+		background-color: #dee2e7;
+		height: 52px;
+		outline: 0;
+		padding-left: 2px;
+    	padding-right: 2px;
+	}
+	
+
+	.tableGrey .sapMListTbl .sapMListTblRow.sapMListTblHeader .sapMText {
+	    font-size: 14px;
+	    color: #515151;
+	    font-weight: 600;
+	    font-family: SourceSansPro-Bold, Arial, Helvetica;
+	    padding-left: 2px;
+    	padding-right: 2px;
+	}
+	
+	.tableGrey .sapMListTbl .sapMText {
+	    padding-top: 1px;
+	    font-size: 16px;
+	    color: #515151;
+	    font-family: SourceSansPro-Semibold, Arial, Helvetica;
+	    padding-left: 2px;
+    	padding-right: 2px;
+	}
+
+	.tableGrey .numberBold.sapMText{
+		font-weight: bold;
+		text-align: right;
+	}
+
+   .tableGrey .sapMBtnDefault.sapMBtnHoverable.sapMBtnIconFirst.sapMBtnInner.sapMFocusable  {
+   		border:none;
+   		background: transparent;
+   		outline: 0;
+   }
+   
+
+	.tableGrey .sapUiIcon:before{
+		color:#7E8E07 ; 
+	}
+	
+	
+	.tableGrey .sapMBtnDefault.sapMBtnHoverable.sapMBtnIconFirst.sapMBtnInner.sapMFocusable:active  .sapUiIcon:before{
+   		border:none;
+   		color:#bfcc4e;
+	}
+	
+
+	.tableGrey.backgroundSpace2.displayRight.sapUiRespGrid.sapUiRespGridHSpace1.sapUiRespGridVSpace1{
+		background-color: #EBECF0 ; /*Gris clarito*/
+	}
+	
+	
+	.tableGrey.backgroundSpace2.displayRight.sapUiRespGrid.sapUiRespGridHSpace1{
+		padding-right:60px;
+		padding-top: 17px;
+		width: 95%;
+	}
+	
+	.tableGrey .btnNext .sapUiIcon:before {
+		color:#4C72B0; /*Azul oscuro*/
+	}
+	
+/*_________ END ELEMENT TABLEGREY ___________*/
+	
+/*---------ELEMENT TABLECARDVIEW --------*/
+	.tableCardView{
+		background: transparent ;
+	    border-bottom: none;
+	    font-weight:normal;
+	    font-size:16px;
+	    color:#444444;
+	    margin-top: 10px;
+	}
+	
+
+	.tableCardView>table{
+		border-bottom: 2px solid #a0ae2c;
+		border-radius: 2px;
+		background-color: #ffffff;
+		box-shadow: 0 1.5px 4px 0 rgba(153, 153, 153, 0.74);
+	}
+	
+	.tableCardView .sapMListTbl th {
+		background: #ffffff;
+	    border-bottom: 1px solid #d8d2d2;
+	    color: #515151;
+	    font-weight:bold;
+	    font-size: 16px;
+	    margin: 13px 1.875rem;
+	    vertical-align: middle;
+	}
+	
+	.tableCardView .sapMListTbl th .sapMText{
+		font-weight:bold;
+		color: #515151;
+		font-size: 16px;
+		vertical-align: middle;
+		padding-top: 10px;
+	}
+	
+	.tableCardView .sapMLIBShowSeparator>td {
+    	border: none;
+        padding-top: 13px;
+	}
+	
+	.tableCardView .sapUiIcon:before{
+		color:#7E8E07 ; /*verde*/
+	}
+	
+	.tableCardView .sapMLnk {
+	    color: #4366a6;
+	    font-family: SourceSansPro-Semibold, Arial, Helvetica;
+	    vertical-align: top;
+	    /*margin-top: 16px;*/
+	}
+	
+	.tableCardView .sapMLnk.sapMLnkMaxWidth{
+	    margin-top: 12px;
+	    margin-bottom: 16px;
+	}
+	
+	
+	.tableCardView .sapMLIB.sapMLIB-CTX.sapMLIBFocusable.sapMLIBShowSeparator.sapMLIBTypeInactive.sapMListTblRow{
+    border: 1px solid #bfbfbf;
+    margin: 19px.25rem 0;
+    height: 40px;
+	}
+
+	
+	.tableCardView .marginToptableCardview.sapMComboBox.sapMComboBoxBase.sapMComboBoxTextField.sapMInputBase{
+		margin-top: -34px;
+	}
+	
+	.tableCardView .marginToptableCardview.sapMInput.sapMInputBase.sapMInputBaseWidthPadding{
+		margin-top: -37px;
+	}
+	
+	.tableCardView .btnGreen.marginToptableCardview.sapMBtn.sapMBtnBase.sapMBtnDisabled{
+		margin-top: -37px;
+	}
+
+/*_________ END ELEMENT TABLECARDVIEW ___________*/
+
+
+
+	/*---------ELEMENT TABLEBLUE --------*/
+	.tableBlue{
+		background: transparent ;
+	    border-bottom: none;
+	    font-weight:normal;
+	    font-size:0.9rem;
+	    color:#444444;
+	}
+	
+	.paddingTableBlue{
+		padding-right:25px;
+	}
+	
+	.tableBlue.backgroundSpace3.displayRight.sapUiRespGrid.sapUiRespGridHSpace1.sapUiRespGridVSpace1{
+	     padding-top: 17px;
+	}
+	
+	.tableBlue.backgroundSpace3.displayRight.sapUiRespGrid.sapUiRespGridHSpace1.sapUiRespGridVSpace1 .sapUiRespGridSpanL2.sapUiRespGridSpanM2.sapUiRespGridSpanS2.sapUiRespGridSpanXL2{
+	     margin-right: -36px;
+	}
+	
+
+	.tableBlue.mediumTitle{
+		padding-bottom: 18px;
+		font-size: 28px;
+		font-family: SourceSansPro-Bold, Arial, Helvetica;
+		font-weight: 600;
+		color: #2a5095;
+		border:none;
+	}
+	
+	.tableBlue>table{
+		box-shadow: 3px 4px 4px 1px rgba(171, 171, 171, 0.54);
+	}
+	
+	.tableBlue .sapMListTbl th {
+		background: rgb(76,114,176);
+	    border-bottom: 1px solid rgb(76,114,176) ;
+	    border-top: 1px solid rgb(76,114,176);
+	    color: #ffffff;
+	    font-weight:bold;
+	    font-size: 16px;
+	    margin: 0 1.875rem;
+	}
+	
+	.tableBlue .sapMListTbl th .sapMText{
+		font-weight:bold;
+		color: #ffffff;
+		font-size: 16px;
+	}
+	
+	.tableBlue .sapUiIcon:before{
+		color:#7E8E07 ; /*verde*/
+	}
+	
+	.tableBlue .sapMObjectIdentifierTitle .sapMText {
+		color:rgb(76,114,176);
+		font-weight:bold;
+		font-size: 34px;
+	}
+	
+	.tableBlue.sapMIBar {
+		background: rgb(76,114,176);
+		font-weight:bold;
+		color: RED;
+	}
+	
+	.tableBlue .sapMText{
+		font-size:16px;
+	}
+	
+	.tableBlue .btnNext .sapUiIcon:before {
+		color:#4C72B0; /*Azul oscuro*/
+	}
+	
+
+/*_________ END ELEMENT TABLEBLUE ___________*/
+
+
+	
+/*---------ELEMENT PANELBLUE --------*/
+	
+
+	
+	.panelBlue .sapMPanel>.sapMPanelHdr, .sapMPanelWrappingDiv, .sapMPanelWrappingDivTb{
+		background: rgb(76,114,176);
+		font-weight:bold;
+		color: #ffffff;
+	}
+	
+	.panelBlue .sapMTB-Transparent-CTX .sapMText{
+		font-weight:bold;
+		color: #ffffff;
+		text-shadow:none;
+	}
+	
+	
+	.panelBlue .sapMPanel .sapUiIcon:before{
+		color:#ffffff ; 
+	}
+	
+	.panelBlue .sapMPanelWrappingDivTb.sapMPanelWrappingDivTbExpanded .sapUiIcon:before{
+		color:#ffffff ; 
+	}
+	
+
+	.panelBlue .sapMPanelBGTranslucent.sapMPanelContent.sapMPanelExpandablePart .sapMText.sapMTextBreakWord.sapMTextMaxWidth.sapUiSelectable{
+		color:rgb(76,114,176); /*Azul*/
+		font-weight:bold;
+		font-size: 1.6rem;
+	}
+	
+	.panelBlue .sapMIBar.sapMTB.sapMTB-Transparent-CTX.sapMTBInactive.sapMTBNewFlex.tableBlue{
+		background:rgb(76,114,176);  /*Azul*/
+	}
+
+	/*Panel extensible*/
+	.panelBlue .sapMPanel>.sapMPanelHdr, .sapMPanelWrappingDiv, .sapMPanelWrappingDivTb {
+	background: rgb(76,114,176);
+	font-weight:bold;
+	color: #ffffff;
+}
+
+/*_________ END ELEMENT PANELBLUE ___________*/
+
+
+
+
+
+
+
+/*------------- ELEMENT CALENDAR --------------------*/
+
+.calendarHead{
+	justify-content: flex-start;
+    background-color:#ffffff !important;
+    height: auto;
+    border-radius:.23rem;
+}
+
+.calendarHead .sapUiIcon:before{
+	color:#666666;
+}
+
+.calendarHead  .sapMLabel{
+	color:#666666;
+}
+
+.calendarHead .alignRight.formatCenter.sapMFlexBox.sapMFlexBoxAlignContentStretch.sapMFlexBoxAlignItemsStretch.sapMFlexBoxBGTransparent.sapMFlexBoxJustifyStart.sapMFlexBoxWrapNoWrap.sapMHBox{
+	justify-content: center; 
+/*	margin-left: 7.5rem;*/
+}
+
+.calendarHead .sapMLnk{
+	width: 100%;
+    margin-right: 5rem;
+    padding: 0.93rem 0 0 0;
+    justify-content: flex-end;
+} 
+
+.calendarTable {
+	background:#ffffff;
+}
+
+.calendarTable .sapMListTbl th {
+    /*border-bottom: 2px solid #dbdfe5;*/
+    border-top: 2px solid #C8C8C8;
+    background: #ffffff;
+    font-weight:bold;
+    font-size:0.9rem;
+    margin: 0 1.875rem;
+}
+
+.calendarTable .sapMBtnDefault.sapMBtnHoverable.sapMBtnInner.sapMBtnText.sapMFocusable{
+ 	border: none;
+ 	background: transparent;
+ 	box-shadow: none ;
+ 	color: #666666;
+ 	font-size:1.5rem;
+	/*	padding: 0 53px 0 50px !important;*/
+    /*height: 51px;*/
+    height: 87px;
+    padding: 38px 53px 0 49px !important;
+    margin: -31px 0 0 0;
+}
+
+.calendarTable .sapMITBScrollContainer{
+	text-align: right;
+    margin: -34px 0 0 0;
+}
+
+
+.calendarTable .sapMFlexBox.sapMFlexBoxAlignContentStretch.sapMFlexBoxAlignItemsStretch.sapMFlexBoxBGTransparent.sapMFlexBoxJustifyStart.sapMFlexBoxWrapNoWrap.sapMVBox{
+	    text-align: end;
+}
+
+.calendarTable  .sapMLIBShowSeparator>td{
+	    border: 0.2px solid #e5e5e5;
+}
+
+.sapUiRespGrid.sapUiRespGridHSpace1.sapUiRespGridVSpace1 .sapUiRespGridSpanL10.sapUiRespGridSpanM10.sapUiRespGridSpanS12.sapUiRespGridSpanXL10{
+	    text-align: end;
+}
+
+
+
+/*------ CALENDAR SAPUI5 -------------*/
+	.calendarTable .sapMeCalendar>.sapMeCalendarMonth>div.sapMeCalendarMonthName {
+	    height: 3rem;
+	    line-height: 3rem;
+	    padding: 0;
+	    font-family: Arial,Helvetica,sans-serif;
+	    font-size: 1rem;
+	    color: #333333;
+	}
+	
+	.calendarTable.sapMeCalendar.sapMeCalendarApproval .sapMeCalendarPrevious.sapUiIcon:before{
+		color:#666666;
+	}
+	
+	.calendarTable.sapMeCalendar.sapMeCalendarApproval .sapMeCalendarNext.sapUiIcon:before{
+		color:#666666;
+	}
+	
+		
+	.calendarTable .sapUiCalHead {
+		color:#666666;
+		font-weight:bold;
+	}
+	
+	.calendarTable .sapUiCalHead .sapUiIcon:before{
+		color:#666666;
+		font-weight:bold;
+	}
+	
+	
+	.calendarTable .sapUiCalHeadB.sapUiCalHeadB1.sapUiCalHeadBFirst{
+		color:#666666;
+		font-weight:bold;
+	}
+	
+	.calendarTable .sapUiCalHead>.sapUiCalHeadB, .sapUiCalCancel, html.sap-desktop .sapUiCalHead>.sapUiCalHeadB:hover, html.sap-desktop .sapUiCalHead>.sapUiCalHeadB:focus{
+		color:#666666;
+		font-weight:bold;
+	}
+	
+	
+	.calendarTable .sapUiCalItemNow>.sapUiCalItemText {
+    border: 0.125rem solid #7E8E07;
+    line-height: 2.6875rem;
+}
+/*__________ END CALENDAR SAPUI5 ______________*/
+
+
+ 
+/*___________ END  ELEMENT CALENDAR ____________________*/

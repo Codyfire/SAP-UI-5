@@ -1,0 +1,89 @@
+{
+  "Projects": [
+	{
+	    "Codigo": "INT-001000-05699",
+	    "Nombre": "Proyecto ONE ERP",
+        "ProjectType": "Time and Materials",
+        "ProjectCurrency": "EUR",
+        "Country": "Spain",
+        "ProjectManager": "Carlos Durán",
+        "ProjectFunctCurrency": "EUR",
+        "Rappel": "No",
+        "ContinuosServicesVariable": "No",
+        "OperatingUnit": "Everis Spain, S.L.U.",
+        "Organization": "SOLUTIONS.Spain.Madrid",
+        "InitialDate": "01/07/20016",
+        "EndDate": "01/08/2017",
+        "Tareas": [
+    	  	{ "Codigo" : "001001", "Nombre" : "Travel"},
+    	  	{ "Codigo" : "001002", "Nombre" : "Programdores"},
+    	  	{ "Codigo" : "001003", "Nombre" : "Analistas"}
+	  	],
+	  	"GrossRevenuePTD": 283000,
+        "TotalCostPTD": 2200000,
+        "ContractMargin": "30%",
+        "TargetMargin": "45%",
+        "Margin GAP": "15%"
+	},
+	{
+	    "Codigo": "INT-001000-05700",
+	    "Nombre": "Proyecto TWO ERP",
+        "ProjectType": "Time and Materials",
+        "ProjectCurrency": "EUR",
+        "Country": "Spain",
+        "ProjectManager": "Carlos Durán",
+        "ProjectFunctCurrency": "EUR",
+        "Rappel": "No",
+        "ContinuosServicesVariable": "No",
+        "OperatingUnit": "Everis Spain, S.L.U.",
+        "Organization": "SOLUTIONS.Spain.Madrid",
+        "InitialDate": "01/07/20016",
+        "EndDate": "01/08/2017",
+	    "Tareas": [
+    	  	{ "Codigo" : "002001", "Nombre" : "Travel 2"},
+    	  	{ "Codigo" : "002002", "Nombre" : "Programdores 2"},
+    	  	{ "Codigo" : "002003", "Nombre" : "APs 2"},
+    	  	{ "Codigo" : "002004", "Nombre" : "Analistas 2"}
+	  	]
+	},
+	{
+	    "Codigo": "INT-001000-05701",
+	    "Nombre": "Proyecto THREE ERP",
+        "ProjectType": "Space Travel",
+        "ProjectCurrency": "DLR",
+        "Country": "EEUU",
+        "ProjectManager": "Elon Musk",
+        "ProjectFunctCurrency": "DLR",
+        "Rappel": "Si",
+        "ContinuosServicesVariable": "No",
+        "OperatingUnit": "Space X S.A.",
+        "Organization": "SOLUTIONS.EEUU.California",
+        "InitialDate": "01/07/2015",
+        "EndDate": "30/11/2016",
+        "Tareas": [
+    	  	{ "Codigo" : "003001", "Nombre" : "Travel 3"},
+    	  	{ "Codigo" : "003002", "Nombre" : "Programdores 3"},
+    	  	{ "Codigo" : "003003", "Nombre" : "Analistas 3"}
+	  	]
+	}, {
+	    "Codigo": "INT-001000-05702",
+        "Nombre": "Metro de Madrid, S.A.",
+        "ProjectType": "Time and Materials",
+        "ProjectCurrency": "EUR",
+        "Country": "Spain",
+        "ProjectManager": "Alberto Santos",
+        "ProjectFunctCurrency": "EUR",
+        "Rappel": "No",
+        "ContinuosServicesVariable": "Si",
+        "OperatingUnit": "Everis Spain, S.L.U.",
+        "Organization": "SOLUTIONS.Spain.Madrid",
+        "InitialDate": "06/12/2016",
+        "EndDate": "11/10/2018",
+    	"Tareas": [
+    	  	{ "Codigo" : "003001", "Nombre" : "Travel 4"},
+    	  	{ "Codigo" : "003002", "Nombre" : "Programadores 4"},
+    	  	{ "Codigo" : "003003", "Nombre" : "Analistas 4"}
+    	 ]
+	}
+  ]
+}

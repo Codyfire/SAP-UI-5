@@ -1,0 +1,112 @@
+{
+  "Projects": [
+	{
+	    "Codigo": "INT-001000-05699",
+	    "Nombre": "Proyecto ONE ERP",
+        "Reporting": [ { 
+            "Month": "Enero",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Febrero",
+            "GrossRevenuePTD": 153000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Marzo",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Abril",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Mayo",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Junio",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Julio",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Agosto",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Septiembre",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Octubre",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Noviembre",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        },
+        { 
+            "Month": "Diciembre",
+            "GrossRevenuePTD": 283000,
+            "TotalCostPTD": 2200000,
+            "ContractMargin": "30%",
+            "TargetMargin": "45%",
+            "Margin GAP": "15%" 
+        }
+	  	]
+	},
+	{
+	    "Codigo": "INT-001000-05700",
+	    "Nombre": "Proyecto TWO ERP"
+	}, {
+	    "Codigo": "INT-001000-05702",
+        "Nombre": "Metro de Madrid, S.A."
+	}
+  ]
+}

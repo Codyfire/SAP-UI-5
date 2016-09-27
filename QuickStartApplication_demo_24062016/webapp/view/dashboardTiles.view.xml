@@ -1,0 +1,228 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:l="sap.ui.layout" 
+    xmlns="sap.m" 
+    controllerName="QuickStartApplication.controller.DashboardTiles" 
+    displayBlock="false">
+
+    <l:Grid containerQuery="true"  class="sapUiResponsiveMargin" defaultSpan="L2 M3 S6">
+              
+        <!--      
+    	<SlideTile class="sapUiSmallMarginTop">
+    		<tiles>
+    			<GenericTile
+    				backgroundImage="images/everis_eyes.jpg"
+    				frameType="TwoByOne">
+    				<tileContent>
+    					<TileContent footer="May 05, 2016">
+    						<content>
+    							<NewsContent
+    								contentText="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+    								subheader="SAPUI5 Developer Kit">
+    							</NewsContent>
+    						</content>
+    					</TileContent>
+    				</tileContent>
+    			</GenericTile>
+    			<GenericTile
+    				backgroundImage="images/everis_kubuk.jpg"
+    				frameType="TwoByOne">
+    				<tileContent>
+    					<TileContent footer="August 25, 2015">
+    						<content>
+    							<NewsContent
+    								contentText="Prueba de texto en tile con deslizador y background de imagen"
+    								subheader="SAP News">
+    							</NewsContent>
+    						</content>
+    					</TileContent>
+    				</tileContent>
+    			</GenericTile>
+    		</tiles>
+            <layoutData>
+    		    <l:GridData span="L12 M12 S12" />
+    	    </layoutData>
+    	</SlideTile>
+    	-->
+    
+    	<!-- PRIMERA FILA -->
+        <Title text="Employee" level="H5" titleStyle="H2" class="sapUiMediumMarginTop cssTitulosDashboard">
+        	<layoutData>
+		        <l:GridData span="L12 M12 S12" />
+	        </layoutData>
+        </Title>
+
+    	<GenericTile header="Time &amp; Labor" size="M" frameType="OneByOne"
+    		press="navegar1" subheader="Time and Labor" >
+    		<tileContent>
+    			<TileContent footer="Remaining days" size="M">
+    				<content>
+    					<NumericContent size="M" value="12" icon="sap-icon://unwired" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="Project Management" size="M" frameType="OneByOne"
+    		press="navergarGestionProyectos" subheader="Your projects" >
+    		<tileContent>
+    			<TileContent footer="Unstable projects" size="M">
+    				<content>
+    					<NumericContent size="M" value="2" icon="sap-icon://measurement-document" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="Expenses Sheet" size="M" frameType="OneByOne"
+    		press="navegarHojaDeGastos" subheader="Pending sheets" >
+    		<tileContent>
+    			<TileContent footer="Money pending charge" size="M" unit="EUR" >
+    				<content>
+    					<NumericContent size="M" value="550.60" icon="sap-icon://paid-leave" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="Workflow Approval" size="M" frameType="OneByOne"
+    		press="navegarDetailWorkflow" >
+    		<tileContent>
+    			<TileContent footer="Open workflow" size="M">
+    				<content>
+    					<NumericContent size="M" value="0" icon="sap-icon://puzzle" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<!-- SEGUNDA FILA -->
+        <Title text="Opportunity Management" level="H5" titleStyle="H2" class="sapUiMediumMarginTop cssTitulosDashboard">
+        	<layoutData>
+		        <l:GridData span="L12 M12 S12" />
+	        </layoutData>
+        </Title>
+    	
+    	<GenericTile header="Create Opportunity" size="M" frameType="OneByOne"
+    		press="onCreateOpportunity"  >
+    		<tileContent>
+    			<TileContent size="M">
+    				<content>
+    					<core:Icon src="sap-icon://create" class="Loaded M sapMNCIconImage sapUiIcon sapUiIconMirrorInRTL" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="MAB Management" size="M" frameType="OneByOne"
+    		press="onMABManagement" >
+    		<tileContent>
+    			<TileContent footer="Identified Opportunities" size="M" unit="EUR">
+    				<content>
+    					<NumericContent size="M" value="53k" icon="sap-icon://manager-insight" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="MAB Reporting" size="M" frameType="OneByOne"
+    		press="onMABReporting" imageDescription="sap-icon://folder" >
+    		<tileContent>
+    			<TileContent footer="Identified Opportunities" size="M" unit="EUR">
+    				<content>
+    					<core:Icon src="sap-icon://folder" class="Loaded M sapMNCIconImage sapUiIcon sapUiIconMirrorInRTL" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<!-- TERCERA FILA -->
+        <Title text="Demo" level="H5" titleStyle="H2" class="sapUiMediumMarginTop cssTitulosDashboard">
+        	<layoutData>
+		        <l:GridData span="L12 M12 S12" />
+	        </layoutData>
+        </Title>
+    	
+    	<!--
+    	<GenericTile header="Prueba OData" size="M" frameType="OneByOne"
+    		press="navegarOData" >
+    		<tileContent>
+    			<TileContent footer="Prueba recepción datos" size="M">
+    				<content>
+    					<NumericContent size="M" value="0" icon="sap-icon://database" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="Prueba Flujo" size="M" frameType="OneByOne"
+    		press="navegarAFlujo" >
+    		<tileContent>
+    			<TileContent footer="Prueba recepción datos" size="M">
+    				<content>
+    					<NumericContent size="M" value="0" icon="sap-icon://process" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="HTML nativo" size="M" frameType="OneByOne"
+    		press="navegarHTMLnativo" >
+    		<tileContent>
+    			<TileContent footer="Prueba código nativo HTML" size="M">
+    				<content>
+    					<NumericContent size="M" value="0" icon="sap-icon://attachment-html" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	-->
+    	
+    	<GenericTile header="Grafico barras D3" size="M" frameType="OneByOne" press="navegarGraficas" 
+    	subheader="Columns" >
+    		<tileContent>
+    			<TileContent footer="Remaining reporting" size="M">
+    				<content>
+    					<NumericContent size="M" value="0" icon="sap-icon://crossed-line-chart" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="Reporting" size="M" frameType="OneByOne" press="onReporting" 
+    	subheader="Your reporting" >
+    		<tileContent>
+    			<TileContent footer="Remaining reporting" size="M">
+    				<content>
+    					<NumericContent size="M" value="0" icon="sap-icon://crossed-line-chart" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="Dynamic Table" size="M" frameType="OneByOne" press="onDinamycTable" 
+    	subheader="Table" >
+    		<tileContent>
+    			<TileContent footer="Dinamyc Table" size="M">
+    				<content>
+    					<NumericContent size="M" value="0" icon="sap-icon://table-chart" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+    	
+    	<GenericTile header="Informes" size="M" frameType="OneByOne" press="onInformes" 
+    	subheader="Tabla informes" >
+    		<tileContent>
+    			<TileContent footer="Informe Table" size="M">
+    				<content>
+    					<core:Icon src="sap-icon://table-view" class="Loaded M sapMNCIconImage sapUiIcon sapUiIconMirrorInRTL" />
+    				</content>
+    			</TileContent>
+    		</tileContent>
+    	</GenericTile>
+                        	
+    </l:Grid>
+
+</mvc:View>

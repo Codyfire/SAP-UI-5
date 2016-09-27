@@ -1,0 +1,16 @@
+<mvc:View xmlns:core="sap.ui.core" 
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    xmlns:l="sap.ui.layout" 
+	xmlns:f="sap.ui.layout.form"
+    controllerName="QuickStartApplication.controller.Informes">
+
+	<Page id="pageInformes" title="Informes" showNavButton="true" navButtonPress="onNavBack">
+	<content>
+		
+		<!-- se crea contenido desde el controlador -->
+	</content>
+	</Page>
+
+</mvc:View>

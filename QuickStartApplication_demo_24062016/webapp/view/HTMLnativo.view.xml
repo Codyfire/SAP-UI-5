@@ -1,0 +1,51 @@
+<mvc:View xmlns:core="sap.ui.core" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:m="sap.m" 
+    xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:viz="sap.viz.ui5.controls" 
+    controllerName="QuickStartApplication.controller.HTMLnativo">
+
+	<m:Page id="paginaHTML" title="HTML nativo" showNavButton="true" navButtonPress="onNavBack">
+		<m:content>
+		    
+		    <m:Panel expandable="false">
+        		<viz:VizFrame id="idVizFrame" width="100%" ></viz:VizFrame>
+		    </m:Panel>
+		    
+		    <script src="js/voronoi.js"></script>
+		    <html>
+		        <head>
+                    <style>
+                        .divGrafico path {
+                          stroke: #fff;
+                        }
+                        
+                        .divGrafico path:first-child {
+                          fill: yellow !important;
+                        }
+                        
+                        .divGrafico circle {
+                          fill: #000;
+                          pointer-events: none;
+                        }
+                        
+                        .divGrafico .q0-9 { fill: rgb(197,27,125); }
+                        .divGrafico .q1-9 { fill: rgb(222,119,174); }
+                        .divGrafico .q2-9 { fill: rgb(241,182,218); }
+                        .divGrafico .q3-9 { fill: rgb(253,224,239); }
+                        .divGrafico .q4-9 { fill: rgb(247,247,247); }
+                        .divGrafico .q5-9 { fill: rgb(230,245,208); }
+                        .divGrafico .q6-9 { fill: rgb(184,225,134); }
+                        .divGrafico .q7-9 { fill: rgb(127,188,65); }
+                        .divGrafico .q8-9 { fill: rgb(77,146,33); }
+                    </style>
+		        </head>
+                <body>
+                    <div class="divGrafico"></div>
+                </body>
+            </html>
+            
+		</m:content>
+	</m:Page>
+
+</mvc:View>

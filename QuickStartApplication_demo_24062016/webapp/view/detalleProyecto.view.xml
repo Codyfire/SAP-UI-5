@@ -1,0 +1,129 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.layout="sap.ui.layout" xmlns:sap.ui.commons="sap.ui.commons" controllerName="QuickStartApplication.controller.detalleProyecto">
+	<SplitApp id="SplitAppDemo" initialDetail="master3" initialMaster="master" orientationChange="onOrientationChange">
+		<detailPages>
+			<Page id="master3" title="Detail Project" icon="sap-icon://action" navButtonText="{device>/isPhone}" navButtonPress="onPressDetailBack">
+			<content>
+			    <Panel id="__panel0" expandable="false">
+			        <customData>
+			            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data4"/>
+			        </customData>
+			    <content>
+			        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid0">
+			        <sap.ui.layout:content>
+			            <Text text="Customer: Metro de Madrid, S.A." maxLines="0" id="__text5"/>
+			            <Text text="Project Type: Time and Materials" maxLines="0" id="__text11"/>
+			            <Text text="Project Currency: EUR" maxLines="0" id="__text10"/>
+			            <Text text="Country: Spain" maxLines="0" id="__text3"/>
+			            <Text text="Project Manager: Carlos Durán" id="__text0" maxLines="0"/>
+			            <Text text="Project Funct. Currency: EUR" maxLines="0" id="__text2"/>
+			            <Text text="Rappel: No" maxLines="0" id="__text6"/>
+			            <Text text="Continuos Services Variable: No" maxLines="0" id="__text4"/>
+			            <Text text="Operating Unit: Everis Spain, S.L.U." maxLines="0" id="__text9_copy2"/>
+			            <Text text="Organization: SOLUTIONS.Spain.Madrid" maxLines="0" id="__text9"/>
+			            <Text text="Fecha de Inicio: 01/07/20016" maxLines="0" id="__text9_copy"/>
+			            <Text text="Fecha Finalización: 01/08/2017" maxLines="0" id="__text2_copy"/>
+			          </sap.ui.layout:content>
+			        </sap.ui.layout:Grid>
+			    </content>
+			    </Panel>
+			     <NavContainer id="__container0" height="50%">
+			    <pages>
+			    <IconTabBar id="__header0">
+			        <items>
+			            <IconTabFilter text="Project" icon="sap-icon://accelerated" iconDensityAware="false" showAll="false">
+			            <content>
+			                <Table noDataText="Drop column list items here and columns in the area above" id="__table0" growingScrollToLoad="false" growing="true" growingThreshold="20" backgroundDesign="Solid" headerDesign="Standard">
+			                    <customData>
+			                        <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data5"/>
+			                    </customData>
+			                    <items>
+			                        <ColumnListItem counter="0" id="__item7">
+			                            <cells>
+			                                <Text text="Revenue" maxLines="0" id="__text8"/>
+			                                <Text text="250.000,00 €" maxLines="0" id="__text12"/>
+			                                <Text text="250.000,00 €" maxLines="0" id="__text13"/>
+			                                <Text text="0%" maxLines="0" id="__text14"/>
+			                                </cells>
+			                        </ColumnListItem>
+			                        <ColumnListItem counter="0" id="__item8">
+			                            <cells>
+			                                <Text text="Cost" maxLines="0" id="__text15"/>
+			                                <Text text="155.000,00 €" maxLines="0" id="__text16"/>
+			                                <Text text="155.000,00 €" maxLines="0" id="__text17"/>
+			                                <Text text="0%" maxLines="0" id="__text18"/>
+			                                </cells>
+			                        </ColumnListItem>
+			                        <ColumnListItem counter="0" id="__item9">
+			                            <cells>
+			                                <Text text="Margin" maxLines="0" id="__text19"/>
+			                                <Text text="95.000,00 €" maxLines="0" id="__text20"/>
+			                                <Text text="95.000,00 €" maxLines="0" id="__text21"/>
+			                                <Text text="0%" maxLines="0" id="__text22"/>
+			                                </cells>
+			                        </ColumnListItem>
+			                         <ColumnListItem counter="0" id="__item10">
+			                            <cells>
+			                                <Text text="%CM" maxLines="0" id="__text23"/>
+			                                <Text text="38,00%" maxLines="0" id="__text24"/>
+			                                <Text text="38,00%" maxLines="0" id="__text25"/>
+			                                <Text text="0%" maxLines="0" id="__text26"/>
+			                                </cells>
+			                        </ColumnListItem></items>
+			                    <columns>
+			                        <Column id="__column0" minScreenWidth="400px" demandPopin="true">
+			                            <header>
+			                                <Label text="Indicator" id="__label0"/>
+			                            </header>
+			                        </Column>
+			                        <Column id="__column1" minScreenWidth="400px" demandPopin="true">
+			                            <header>
+			                                <Label text="Budget" id="__label1"/>
+			                            </header>
+			                        </Column>
+			                        <Column id="__column2" minScreenWidth="400px" demandPopin="true">
+			                            <header>
+			                                <Label text="Forecast" id="__label2"/>
+			                            </header>
+			                        </Column>
+			                        
+			                        <Column id="__column3" minScreenWidth="400px" demandPopin="true">
+			                            <header>
+			                                <Label text="Variance" id="__label3"/>
+			                            </header>
+			                        </Column>
+			                      </columns></Table>
+			            </content>
+			            </IconTabFilter>
+			            <IconTabFilter text="Financial" icon="sap-icon://task" iconColor="Critical"/>
+			            <IconTabFilter text="Reporting" icon="sap-icon://activity-assigned-to-goal" iconColor="Positive">
+			            	<content>
+			            		<Image width="930px" height="290px" id="__image1" src="images/resultados.jpg" busy="false"/>
+			            	</content>
+			            </IconTabFilter>
+			        </items>
+			    </IconTabBar>
+			    </pages>
+			    </NavContainer>
+			</content>
+			</Page>
+		</detailPages>
+		<masterPages>
+			<Page id="master" title="Detail Projects" icon="sap-icon://action" showNavButton="true" navButtonPress="onNavBack">
+				<customData>
+			            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data7"/>
+			        </customData>
+				<content>
+					<SearchField width="100%" placeholder="Search" id="__field0"/>
+					<List headerDesign="Standard" includeItemInSelection="false" inset="false" mode="None">
+						<items>
+							<StandardListItem title="MKT-000318-00001" type="Navigation" press="onPressGoToMaster" description="Mantenimiento de SAP"/>
+							<StandardListItem title="INT-001000-00009" type="Navigation" press="onPressGoToMaster" description="Planificación del Mantenimiento Repsol"/>
+							<StandardListItem title="EXT-000318-00001" type="Navigation" press="onPressGoToMaster" description="Mantenimiento de SAP"/>
+							<StandardListItem title="EXT-000267-00098" type="Navigation" press="onPressGoToMaster" description="Proyecto IUSA Iberdrola"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</masterPages>
+	</SplitApp>
+</mvc:View>
