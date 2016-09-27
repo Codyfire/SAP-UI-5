@@ -1,0 +1,16 @@
+{
+	"Users": [
+		{ "Name": "Jose Fco Sabater", "EmployeeID": "050155", "NIF": "48524455E" },
+		{ "Name": "Carlos Diaz", "EmployeeID": "100333", "NIF": "95290033K" },
+		{ "Name": "Jose Rocamora", "EmployeeID": "020009", "NIF": "48524455E" },
+		{ "Name": "Marta Alvarez", "EmployeeID": "100926", "NIF": "62884480L" },
+		{ "Name": "Alejandra", "EmployeeID": "110126", "NIF": "27826646G" },
+		{ "Name": "Mauricio Guti", "EmployeeID": "110126", "NIF": "86365525L" },
+		{ "Name": "David Manras", "EmployeeID": "112126", "NIF": "48524455E" },
+		{ "Name": "David Arevalo", "EmployeeID": "113457", "NIF": "48524455E" },
+		{ "Name": "Maria Elena", "EmployeeID": "140146", "NIF": "95290033K" },
+		{ "Name": "Alvaro Siles", "EmployeeID": "220776", "NIF": "48524455E" },
+		{ "Name": "Andreina Salamanca", "EmployeeID": "810126", "NIF": "48524455E" },
+		{ "Name": "Dayana Martínez", "EmployeeID": "030106", "NIF": "48524455E" }
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"expenseType": [
+		{
+			"type" : "Acomodation",
+			"values" : [
+				{ "name" : "Apartment 1st Install" },
+				{ "name" : "Apartment maintenance" },
+				{ "name" : "Apartment move" },
+				{ "name" : "Apartment rent" },
+				{ "name" : "Hotel" }
+			]
+		},
+		{
+			"type" : "Transport", 
+			"values" : [
+				{ "name" : "Car renting" },
+				{ "name" : "Fly-back" },
+				{ "name" : "Fuel" },
+				{ "name" : "mileage renting" },
+				{ "name" : "mileage standard" },
+				{ "name" : "parking / toll" },
+				{ "name" : "Plane ticket" },
+				{ "name" : "Rates and taxes" },
+				{ "name" : "Taxi" },
+				{ "name" : "transport" }
+			]
+		},
+		{
+			"type" : "Meals",
+			"values" : [
+				{ "name" : "Business travel breakfast" },
+				{ "name" : "Business travel lunch" },
+				{ "name" : "Business travel dinner" },
+				{ "name" : "Client Breakfast" },
+				{ "name" : "Client lunch" },
+				{ "name" : "Client dinner" },
+				{ "name" : "Friday's lunch or intesive working day" },
+				{ "name" : "Internal dinner" },
+				{ "name" : "Internal lunch" }
+			]
+		},
+		{
+			"type" : "Per diem",
+			"values" : [
+				{ "name" : "Apartment per diem" },
+				{ "name" : "Apartment per diem project start/end" },
+				{ "name" : "Availability and guard" },
+				{ "name" : "Hotel per diem" },
+				{ "name" : "Hotel per diem project start/end" }
+			]
+		},
+		{
+			"type" : "Others",
+			"values" : [
+				{ "name" : "Events and conferences" },
+				{ "name" : "IT accesories" },
+				{ "name" : "Languages" },
+				{ "name" : "Languages depdendent persons" },
+				{ "name" : "Library" },
+				{ "name" : "Line/data connection" },
+				{ "name" : "Office materials" },
+				{ "name" : "Other travel expenses" },
+				{ "name" : "Scholarship" },
+				{ "name" : "Third party gift" },
+				{ "name" : "Training" }
+			]
+		}
+	]
+}

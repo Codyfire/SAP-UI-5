@@ -1,0 +1,58 @@
+{
+  "run": [
+    {
+      "filePath": "/webapp/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "urlParametersNotNeeded": false,
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 1213751,
+        "displayName": "Run index.html 1",
+        "lastRunTimeStamp": 1468846703471
+      }
+    },
+    {
+      "filePath": "/webapp/index.html",
+      "previewMode": 0,
+      "dataMode": 0,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 9335140,
+        "displayName": "Run index.html",
+        "hasIssues": true
+      }
+    },
+    {
+      "filePath": "/webapp/Component.js",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 3374743,
+        "displayName": "Run Component.js"
+      }
+    }
+  ]
+}

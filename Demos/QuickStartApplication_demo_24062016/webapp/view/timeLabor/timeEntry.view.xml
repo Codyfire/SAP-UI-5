@@ -1,0 +1,71 @@
+<mvc:View xmlns:core="sap.ui.core" 
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    controllerName="QuickStartApplication.controller.timeEntry" 
+    viewName="timeEntry">
+
+	<f:SimpleForm id="SimpleFormToolbar"
+		editable="true"
+		layout="ResponsiveGridLayout" >
+		<f:content>
+
+        <Label fieldGroupIds="comboSemanas" text="Semana" />
+    	<ActionSelect id="comboSemanas"
+    	    selectionChange="selectSemana"
+    		items="{
+    			path: '/semanas',
+    			sorter: { path: 'fecha' }
+    		}">
+    		<items>
+    			<core:Item key="{id}" text="{fecha}" />
+    		</items>
+			<layoutData>
+				<l:GridData span="L4 M6 S12" />
+			</layoutData>
+    	</ActionSelect>
+
+        <Label text="Project" textAlign="Left" >
+        </Label>
+        <SearchField 
+                class="sapUiLargeMarginEnd"
+                id="searchField"
+                width="100%"
+                placeholder="search for..."
+                enableSuggestions="true"
+                search="onSearch"
+                suggest="onSuggest"
+                suggestionItems="{
+                    path: '/Projects',
+                    sorter: { path: 'Nombre' }
+                }">
+            <suggestionItems>
+                <SuggestionItem text="{Codigo}" description="{Nombre}" key="{Codigo}"/>
+            </suggestionItems>
+			<layoutData>
+				<l:GridData span="L4 M6 S12" />
+			</layoutData>
+        </SearchField>
+        
+        <Label text="Template" textAlign="Left" />
+        <ActionSelect id="comboTemplates" autoAdjustWidth="false" >
+            <items>
+                <core:ListItem text="Vacation" key="Vacation"/>
+                <core:ListItem text="Bank Holiday Festive" key="BankHoliday"/>
+                <core:ListItem text="Proyecto Interno" key="ProyectoInterno"/>
+            </items>
+			<layoutData>
+				<l:GridData span="L4 M6 S12" />
+			</layoutData>
+        </ActionSelect>
+        <Button text="New row" width="150px" icon="sap-icon://accidental-leave" press="newRow" class="sapUiMediumMarginBegin" />
+
+		</f:content>
+	</f:SimpleForm>
+
+    <l:HorizontalLayout id="bloqueTabla">
+ 
+    </l:HorizontalLayout>
+</mvc:View>

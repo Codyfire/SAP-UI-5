@@ -1,0 +1,44 @@
+<mvc:View xmlns:core="sap.ui.core" 
+		xmlns:html="http://www.w3.org/1999/xhtml" 
+		xmlns:mvc="sap.ui.core.mvc" 
+		xmlns="sap.m" 
+		xmlns:l="sap.ui.layout" 
+        xmlns:viz="sap.viz.ui5.controls" 
+		controllerName="QuickStartApplication.controller.reporting.detailProject">
+
+		<Page id="pageVizFrame" showNavButton="{device>/isPhone}" navButtonPress="onNavBack" >
+			<content>
+			    <Panel id="panelDetalle" expandable="false">
+    			    <content>
+    			        
+                        <VBox class='settingsBox'>
+                            <Label text='Tipo gráfico' design="Bold" class='settingsLabel'></Label>
+                            <RadioButtonGroup id='tipoGraficoRadioGroup'>
+                                <buttons>
+                                    <RadioButton class='settingsRadio' text="Columnas" select="onTipoGraficoSelected"/>
+                                    <RadioButton class='settingsRadio' text="Barras" select="onTipoGraficoSelected"/>
+                                </buttons>
+                            </RadioButtonGroup>
+                        </VBox>
+        
+                        <viz:Popover id="idPopOver"></viz:Popover>
+            			<viz:VizFrame id="idVizFrame" width="100%" ></viz:VizFrame>
+
+    			    </content>
+			    </Panel>
+
+			</content>
+			<footer id="footer">
+				<Bar id="bar2">
+					<contentLeft id="contentLeft">
+						<Button id="btnBack" icon="sap-icon://refresh" press="handleRefresh" />
+						<Button id="receipt_add_button" text="Add receipt" icon="sap-icon://accidental-leave" type="Accept" press="onShowPanelAddReceipt"/>
+					</contentLeft>
+					<contentRight id="contentLeft">
+					    <Button id="receipt_delete_button" text="Delete" width="120px" press="onDeleteSlc" type="Reject" visible="false" />					
+						<Button id="btnInfo" icon="sap-icon://message-information" press="handleInfo" />					
+					</contentRight>
+				</Bar>
+			</footer>
+		</Page>
+</mvc:View>

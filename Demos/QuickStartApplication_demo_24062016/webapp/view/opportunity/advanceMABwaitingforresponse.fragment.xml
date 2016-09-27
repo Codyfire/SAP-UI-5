@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:form="sap.ui.layout.form">
+
+	<Dialog 
+		title="Change Status: Waiting for Response to Won"
+		type="Message"
+		state="None"
+		draggable="true"
+		contentWidth="70%">
+		<content>
+
+			<form:SimpleForm minWidth="-1" maxContainerCols="2"
+				layout="ResponsiveGridLayout" editable="true" >
+				<form:content>
+					
+					<Label text="Winning Date"
+						design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit"/>
+					<DateTimeInput value="{/WinningDate}" type="Date" placeholder="Enter Winning Date ..." />
+						
+				</form:content>
+			</form:SimpleForm>
+		</content>
+		<beginButton>
+			<Button iconDensityAware="false" text="Save" type="Transparent"
+				icon="sap-icon://save" iconFirst="true" width="auto" enabled="true" visible="true"
+				press="onSaveDialog"/>
+		</beginButton>
+		<endButton>
+			<Button iconDensityAware="false" text="Cancel" type="Transparent"
+				icon="sap-icon://sys-cancel" iconFirst="true" width="auto" enabled="true" visible="true"
+				press="onCancelDialog"/>
+		</endButton>
+	</Dialog>
+	
+</core:FragmentDefinition>

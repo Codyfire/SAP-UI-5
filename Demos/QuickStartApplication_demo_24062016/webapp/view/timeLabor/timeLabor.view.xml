@@ -1,0 +1,195 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ushell.ui.footerbar="sap.ushell.ui.footerbar" controllerName="QuickStartApplication.controller.timeLabor" viewName="timeLabor">
+    <App>
+		<pages>
+			<Page title="Time &amp; Labor" icon="" showNavButton="true" showHeader="true" navButtonType="Back" navButtonText="" backgroundDesign="Standard" busy="false" navButtonPress="onNavBack">
+			<content>
+			    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid1" defaultSpan="XL4 L4 M4 S12">
+			    </sap.ui.layout:Grid>
+			    <IconTabBar selectedKey="__filter4" id="__bar1">
+			        <items>
+			            <IconTabFilter text="Time Entry" count="10" icon="sap-icon://task" iconColor="Critical" id="__filter5">
+			                <content>
+                                <mvc:XMLView id="timeEntry" viewName="QuickStartApplication.view.timeLabor.timeEntry"/>
+			                </content>
+			            </IconTabFilter>
+			            <IconTabFilter text="Time Search" count="" icon="sap-icon://share" iconColor="Positive" id="__filter6">
+			                <content>
+			                    <Label text="Between" width="10%" id="__label2"/>
+			                    <ActionSelect selectedItem="Element sap.ui.core.ListItem#__item7" selectedKey="item1" selectedItemId="__item7" id="__select0" width="270px">
+			                        <items>
+			                            <core:ListItem text="March 07/03/2016 - 13/03/2016" key="item1" id="__item7"/>
+			                            <core:ListItem text="March 14/03/2016 - 20/03/2016" key="item2" id="__item8"/>
+			                            <core:ListItem text="List Item 3" key="item3" id="__item9"/></items>
+			                    </ActionSelect>
+			                    <Button text="Search" width="100px" id="__button0" activeIcon="" icon="sap-icon://action"/>
+			                    <Table noDataText="Drop column list items here and columns in the area above" id="__table0_copy">
+			                        <customData>
+			                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data58"/>
+			                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+			                        <items>
+			                            <ColumnListItem counter="0" id="__text120">
+			                                <cells>
+			                                    <Text id="__text50" text="EXT-000267-00089" maxLines="0"/>
+			                                    <Text id="__text51" text="N. Hours" maxLines="0"/>
+			                                    <Input id="__text52" value="8" width="35px"/>
+			                                    <Input id="__text53" value="8" width="100%"/>
+			                                    <Input id="__text54" value="8" width="100%"/>
+			                                    <Input id="__text55" width="100%"/>
+			                                    <Input id="__text56" width="100%"/>
+			                                    <Input id="__text57" width="100%"/>
+			                                    <Input id="__text58" width="100%"/>
+			                                    <Input id="__text59" value="24" width="100%" editable="false"/>
+			                                    <Input id="__text60" width="100%" editable="false"/></cells>
+			                            </ColumnListItem>
+			                            <ColumnListItem counter="0" id="__text121">
+			                                <cells>
+			                                    <Text id="__text61" text="EXT-000267-00099" maxLines="0"/>
+			                                    <Text id="__text62" text="N. Hours" maxLines="0"/>
+			                                    <Input id="__text70" width="100%"/>
+			                                    <Input id="__text63" width="100%"/>
+			                                    <Input id="__text64" width="100%"/>
+			                                    <Input id="__text65" width="100%"/>
+			                                    <Input id="__text66" value="8" width="100%"/>
+			                                    <Input id="__text67" width="100%"/>
+			                                    <Input id="__text68" width="100%"/>
+			                                    <Input id="__text69" value="8" width="100%" editable="false"/></cells>
+			                            </ColumnListItem></items>
+			                        <columns>
+			                            <Column width="100px" id="__text101">
+			                                <header>
+			                                    <Label text="Project" id="__text90"/>
+			                                </header>
+			                            </Column>
+			                            <Column width="100px" id="__text102">
+			                                <header>
+			                                    <Label text="Type" id="__text91"/>
+			                                </header>
+			                            </Column>
+			                            <Column width="30px" id="__text103">
+			                                <header>
+			                                    <Label text="7" width="35px" id="__text92"/>
+			                                </header>
+			                            </Column>
+			                            <Column width="35px" id="__text104">
+			                                <header>
+			                                    <Text text="8" maxLines="0" id="__text93"/>
+			                                </header>
+			                            </Column>
+			                            <Column width="35px" id="__text105">
+			                                <header>
+			                                    <Text text="9" maxLines="0" id="__text94"/>
+			                                </header>
+			                            </Column>
+			                            <Column width="35px" id="__text106">
+			                                <header>
+			                                    <Text text="10" maxLines="0" id="__text95"/>
+			                                </header>
+			                            </Column>
+			                            <Column width="35px" id="__text107">
+			                                <header>
+			                                    <Text text="11" maxLines="0" id="__text96"/>
+			                                </header>
+			                            </Column>
+			                            <Column width="35px" id="__text108">
+			                                <header>
+			                                    <Text text="12" maxLines="0" id="__text100"/>
+			                                </header>
+			                            </Column>
+			                            <Column width="35px" id="__text109">
+			                                <header>
+			                                    <Text text="13" maxLines="0" id="__text97"/>
+			                                </header>
+			                            </Column>
+			                            <Column id="__text110">
+			                                <header>
+			                                    <Text text="Total" maxLines="0" id="__text98"/>
+			                                </header>
+			                            </Column>
+			                            <Column>
+			                                <header>
+			                                    <Text maxLines="0" id="__text99"/>
+			                                </header>
+			                            </Column></columns></Table>
+			                </content>
+			            </IconTabFilter>
+			            <IconTabFilter text="Templates" count="2" icon="sap-icon://tags" iconColor="Critical" id="__filter0">
+			                <content>
+			                    <Label fieldGroupIds="__select0" text="Template" textAlign="Center" width="10%" id="__label0_copy"/>
+			                    <ActionSelect fieldGroupIds="__label0" width="270px" selectedItemId="__item21" id="__select0_copy3">
+			                        <items>
+			                            <core:ListItem text="Vacation" key="Marzo"/>
+			                            <core:ListItem text="Bank Holiday Festive" key="item2"/>
+			                            <core:ListItem text="Proyecto Interno" key="item3"/></items>
+			                    </ActionSelect>
+			                    <Button text="New" width="100px" id="__button4" icon="sap-icon://favorite"/>
+			                    <Table noDataText="Drop column list items here and columns in the area above" id="__table1">
+			                        <customData>
+			                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data59"/>
+			                        </customData>
+			                        <items>
+			                            <ColumnListItem counter="0" id="__item10">
+			                                <cells>
+			                                    <Text text="everis - Proyecto Interno" maxLines="0" id="__text11"/>
+			                                    <Text text="40" maxLines="0" id="__text13"/></cells>
+			                            </ColumnListItem>
+			                            <ColumnListItem counter="0" id="__item12">
+			                                <cells>
+			                                    <Text text="Iberdrola - Factoría 2016" maxLines="0" id="__text15"/>
+			                                    <Text text="40" maxLines="0" id="__text16"/></cells>
+			                            </ColumnListItem>
+			                            <ColumnListItem counter="0" id="__item12_copy">
+			                                <cells>
+			                                    <Text text="Iberdrola - Factoría 2016" maxLines="0"/>
+			                                    <Text text="40" maxLines="0"/></cells>
+			                            </ColumnListItem></items>
+			                        <columns>
+			                            <Column id="__column10" width="60%">
+			                                <header>
+			                                    <Label text="Name" id="__label3"/>
+			                                </header>
+			                            </Column>
+			                            <Column id="__column13">
+			                                <header>
+			                                    <Text text="Header" maxLines="0"/>
+			                                </header>
+			                            </Column>
+			                            <Column id="__column11">
+			                                <header>
+			                                    <Label text="Update" id="__label7"/>
+			                                </header>
+			                            </Column>
+			                            <Column id="__column12">
+			                                <header>
+			                                    <Label text="Delete" id="__label8"/>
+			                                </header>
+			                            </Column></columns></Table>
+			                </content>
+			            </IconTabFilter>
+			            <IconTabFilter text="Pending items" count="5" showAll="true" id="__filter4">
+			                <content>
+			                    <List noDataText="Sin datos" id="__list1">
+			                        <customData>
+			                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data5"/>
+			                        </customData>
+			                        <items>
+			                            <StandardListItem counter="0" title="List Item 1" id="__item3"/>
+			                            <StandardListItem counter="0" title="List Item 2" id="__item4"/>
+			                            <StandardListItem counter="0" title="List Item 3" id="__item5"/></items></List>
+			                </content>
+			            </IconTabFilter></items>
+			    </IconTabBar>
+			</content>
+			<footer>
+			    <Bar id="__bar0">
+			        <customData>
+			            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data22"/>
+			        </customData>
+			    <contentRight>
+			        <Button text="Save" width="100px" id="__button3" icon="sap-icon://accept" type="Accept"/>
+			    </contentRight>
+			    </Bar>
+			</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

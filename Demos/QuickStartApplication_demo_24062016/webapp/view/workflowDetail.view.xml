@@ -1,0 +1,102 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.commons="sap.ui.commons" xmlns:sap.suite.ui.commons="sap.suite.ui.commons" xmlns:sap.ushell.ui.footerbar="sap.ushell.ui.footerbar" controllerName="QuickStartApplication.controller.workflowDetail">
+	<SplitApp id="SplitWorkFlow" initialDetail="detailWork" initialMaster="masterWork" orientationChange="onOrientationChange">
+<detailPages>
+		<Page id="detailWork" title="Pending workflows" navButtonTap="navegarMenu" navButtonType="Default">
+				<content>
+				    <IconTabBar selectedKey="__filter0" id="__bar0">
+				        <items>
+				            <IconTabFilter text="Detail" count="" showAll="false" id="__filter0" icon="sap-icon://activity-2">
+				                <content>
+				                    <List noDataText="Sin datos" id="__list0">
+				                        <customData>
+				                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data1"/>
+				                        </customData>
+				                        <items>
+				                            <StandardListItem counter="0" title="David Arévalo - 23/02/2016" id="__item0" description="Expense SDCE1769601 for Arevalo, David (90,00 EUR)" type="Active"/></items></List>
+				                    <Table noDataText="Drop column list items here and columns in the area above" id="__table0">
+				                        <customData>
+				                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data5"/>
+				                        </customData>
+				                        <items>
+				                            <ColumnListItem counter="0" id="__item4">
+				                                <cells>
+				                                    <Text text="10/02/2016" maxLines="0" id="__text3"/>
+				                                    <Text text="22,50" maxLines="0" id="__text4"/>
+				                                    <Text text="Taxi" maxLines="0" id="__text5"/>
+				                                    <sap.ui.commons:CheckBox id="__box0" valueState="Success" checked="true" editable="false"/></cells>
+				                            </ColumnListItem>
+				                            <ColumnListItem counter="0" id="__item5">
+				                                <cells>
+				                                    <Text text="10/02/2016" maxLines="0" id="__text6"/>
+				                                    <Text text="30,50" maxLines="0" id="__text7"/>
+				                                    <Text text="Lunch" maxLines="0" id="__text8"/>
+				                                    <sap.ui.commons:CheckBox id="__box1" editable="false" checked="true"/></cells>
+				                            </ColumnListItem></items>
+				                        <columns>
+				                            <Column id="__column0">
+				                                <header>
+				                                    <Label text="Date" id="__label0"/>
+				                                </header>
+				                            </Column>
+				                            <Column id="__column1">
+				                                <header>
+				                                    <Label text="Amount" id="__label1"/>
+				                                </header>
+				                            </Column>
+				                            <Column id="__column2">
+				                                <header>
+				                                    <Label text="Type" id="__label2"/>
+				                                </header>
+				                            </Column>
+				                            <Column id="__column3">
+				                                <header>
+				                                    <Text text="Receipt Required" maxLines="0" id="__text9"/>
+				                                </header>
+				                            </Column>
+				                            <Column id="__column4">
+				                                <header>
+				                                    <Text text="Details" maxLines="0" id="__text10"/>
+				                                </header>
+				                            </Column></columns></Table>
+				                </content>
+				            </IconTabFilter>
+				            <IconTabFilter text="Allocation" count="" icon="sap-icon://task" iconColor="Critical" id="__filter1"/>
+				            <IconTabFilter text="Appoval Notes" count="5" icon="sap-icon://shipping-status" iconColor="Positive" id="__filter2"/></items>
+				    </IconTabBar>
+				</content>
+				<footer>
+				    <Bar id="__bar1">
+				        <customData>
+				            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data3"/>
+				        </customData>
+				    <contentLeft>
+				        <Button text="Aceptar" width="150px" id="__button1" icon="sap-icon://accept" type="Accept"/>
+				    </contentLeft>
+				    <contentRight>
+				        <Button text="Cancelar" width="150px" id="__button2" icon="sap-icon://sys-cancel" type="Reject"/>
+				    </contentRight>
+				    </Bar>
+				</footer>
+		</Page>
+</detailPages>
+<masterPages>
+	<Page id="detailMaster" title="Detail Workflows" showNavButton="true" navButtonPress="onNavBack">
+		<customData>
+			            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data7"/>
+			        </customData>
+				<content>
+					<SearchField width="100%" placeholder="Code" id="__field0"/>
+					<List>
+						<items>
+							<StandardListItem title="David Arévalo" type="Navigation" press="onPressNavToDetail" description="Expense SDCE1769601  (90,00 EUR)"/>
+							<StandardListItem title="María Elena Fernández" type="Navigation" press="onPressNavToDetail" description="Expense SDCE1316684 (201,92 EUR) "/>
+							<StandardListItem title="David Manras" type="Navigation" press="onPressNavToDetail" description="Expense SDCE1316685 (201,92 EUR) "/>
+							<StandardListItem title="David Arévalo" type="Navigation" press="onPressNavToDetail" description="Expense SDCE1316686 (601,92 EUR) "/>
+						</items>
+					</List>
+				</content>
+	</Page>
+</masterPages>
+	
+	</SplitApp>
+</mvc:View>

@@ -1,0 +1,53 @@
+<mvc:View xmlns:core="sap.ui.core" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:m="sap.m" 
+    xmlns="http://www.w3.org/1999/xhtml" 
+    controllerName="QuickStartApplication.controller.graficos">
+
+	<m:Page title="Title" showNavButton="true" navButtonPress="onNavBack">
+		<m:content>
+		    
+		<html>
+            <head>
+                <script src="js/groupedBars.js"></script>
+                <style>
+                body {
+                  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                  margin: auto;
+                  position: relative;
+                  width: 960px;
+                }
+                
+                text {
+                  font: 10px sans-serif;
+                }
+                
+                .axis path,
+                .axis line {
+                  fill: none;
+                  stroke: #000;
+                  shape-rendering: crispEdges;
+                }
+                
+                form {
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+                }
+                </style>
+            </head>
+            <body>
+                <form style="position: initial;">
+                  <label><input type="radio" name="mode" value="grouped"/>Grouped</label>
+                  <label><input type="radio" name="mode" value="stacked" checked="true"/> Stacked</label>
+                  <div class="divGroupedBars">
+                      <!-- aqui se carga el grafico dinamicamente mediante codigo groupedBars.js -->
+                  </div>
+                </form>
+            </body>
+        </html>
+		    
+		</m:content>
+	</m:Page>
+
+</mvc:View>

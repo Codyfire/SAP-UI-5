@@ -1,0 +1,51 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:l="sap.ui.layout" 
+    xmlns="sap.m" 
+    xmlns:u="sap.ui.unified"
+    controllerName="QuickStartApplication.controller.View1" 
+    displayBlock="false">
+
+	<Page title="Welcome to Everis" icon="" showSubHeader="false" showHeader="false">
+		<content>
+
+		<u:Shell
+			id="myShell"
+			class="fondoEveris"
+			icon="{/logo}">
+			<u:headItems>
+				<u:ShellHeadItem
+					tooltip="Configuration"
+					icon="sap-icon://menu2"
+					press="handlePressConfiguration" />
+				<u:ShellHeadItem
+					tooltip="Home"
+					icon="sap-icon://home"
+					visible="false"
+					press="handlePressHome" />
+			</u:headItems>
+			<u:headEndItems>
+				<u:ShellHeadItem
+					icon="sap-icon://log"
+					tooltip="Logoff"
+					press="handleLogoffPress" />
+			</u:headEndItems>
+			<u:user>
+				<u:ShellHeadUserItem
+					image="sap-icon://person-placeholder"
+					username="Jose Fco Sabater"
+					press="handleUserItemPressed" />
+			</u:user>
+			<u:curtainContent>
+				<Text text="Everis S.A."/>
+			</u:curtainContent>
+			
+			<Page id="dashboardPage" showHeader="false">
+              <!-- aqui se anyaden las paginas de la aplicacion -->
+            </Page>
+
+		</u:Shell>
+		</content>
+	</Page>
+
+</mvc:View>
